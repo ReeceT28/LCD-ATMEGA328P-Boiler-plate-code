@@ -14,9 +14,9 @@ void setup()
   _delay_ms(100);
   lcd_initialise();  // Initialize the LCD
   _delay_ms(100);
-  lcdwrite("Everyone is "); // Display "Hello"
+  lcdwrite("Everyone is "); 
   lcdcmdwrite(0xC0);  // Move to second line of the LCD
-  lcdwrite("always connected ");  // Display "World"
+  lcdwrite("always connected "); 
 }
 
 // Empty loop function (not needed for this example)
@@ -32,7 +32,7 @@ int main(void)
 
     while(1)
     {
-        loop();  // Enter the loop (currently empty, can be used for further tasks)
+        loop();  // Enter the loop - empty right now but can add code here
     }
 
     return 0;  // End of main (not necessary but included for clarity)
